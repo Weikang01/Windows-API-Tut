@@ -12,7 +12,7 @@ int CALLBACK WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInst, _In
 	wc.lpfnWndProc = WindowProcedure;
 
 	if (!RegisterClassW(&wc)) {
-		return 12345;
+		return -1;
 	}
 	CreateWindowW(L"myWindowClass", L"New Window", WS_OVERLAPPEDWINDOW | WS_VISIBLE, 100, 100, 500, 500, NULL, NULL, NULL, NULL);
 
